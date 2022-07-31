@@ -18,7 +18,7 @@ function App() {
         >
           Learn React
         </a>
-        <h1>Загружено на Github Pages</h1>
+        <h1>Загружено на Github Pages БЕСПЛАТНО!!!</h1>
       </header>
     </div>
   );
