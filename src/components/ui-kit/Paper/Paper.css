@@ -1,0 +1,13 @@
+.paper {
+  text-align: center;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.paper__title {
+  font-size: 24px;
+  font-weight: 500;
+}
+.paper__sub-title {
+  font-size: 14px;
+}
