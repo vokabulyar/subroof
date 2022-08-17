@@ -1,25 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Card } from "./components/ui-kit/Card/Card";
+import { Paper } from "./components/ui-kit/Paper";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <h1>Загружено на Github Pages БЕСПЛАТНО!!!</h1>
-      </header>
+      <Paper
+        className="fursonas-gallery"
+        title="Можно начинать"
+        subTitle="Выберите тип фурсоны"
+      >
+        <div className="content">
+          <Card className="furry-card">
+            <div className="furry-card__image" />
+            <div className="furry-card__title">Furry type</div>
+          </Card>
+          <Card className="furry-card">
+            <div className="furry-card__image" />
+            <div className="furry-card__title">Furry type</div>
+          </Card>
+          <Card className="furry-card">
+            <div className="furry-card__image" />
+            <div className="furry-card__title">Furry type</div>
+          </Card>
+          <Card className="furry-card">
+            <div className="furry-card__image" />
+            <div className="furry-card__title">Furry type</div>
+          </Card>
+          <Card className="furry-card">
+            <div className="furry-card__image" />
+            <div className="furry-card__title">Furry type</div>
+          </Card>
+        </div>
+      </Paper>
     </div>
   );
 }

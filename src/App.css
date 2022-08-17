@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+.fursonas-gallery {
+  position: relative;
+}
+.fursonas-gallery::before {
+  content: "";
+  background: url("./media/Background\ haotic\ texture.png");
+  background-size: 20%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.04;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fursonas-gallery .content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 17px;
+  margin-top: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.furry-card {
+  position: relative;
+  width: 154px;
+  height: 207px;
+  background-color: var(--accent-color);
+  border-radius: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.furry-card__image {
+  width: 100%;
+  height: 80%;
+  background-image: url("https://loremflickr.com/154/174");
+  border-radius: 10px;
+}
+.furry-card__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  font-size: 14px;
+  font-weight: 600;
 }
